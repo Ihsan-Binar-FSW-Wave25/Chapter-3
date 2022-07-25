@@ -1,0 +1,371 @@
+/* Global Styling */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+:root {
+  --color-orange: rgba(243, 175, 52, 1);
+  --color-grey: rgba(141, 141, 141, 1);
+}
+
+h1, h2, h3 {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+sub {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: repeat(5, minmax(100vh, 100vh));
+}
+
+nav {
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+}
+
+.nav-text a {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+.nav-text li:hover {
+  box-shadow: inset 0px 0px 0px 1px azure;
+}
+
+.navbar-brand {
+  width: 20%;
+}
+
+.navbar-brand > span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.cover-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #08090a;
+}
+
+.orange-button {
+  color: black;
+  background: var(--color-orange);
+}
+
+/* Section 1 */
+.section-1 {
+  background-image: url("assets/images/main-bg.jpg");
+  display: grid;
+  grid-template-rows: 11fr 1fr;
+}
+
+.section1-scroll {
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.section1-scroll p {
+  margin: 0;
+}
+
+/* Section 2 */
+.section-2 {
+  background-image: url("assets/images/the-games-bg.jpg");
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: unset;
+  width: 7%;
+}
+
+.carousel-indicators button {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: white;
+}
+
+/* Section 3 */
+.section-3 {
+  background-image: url("assets/images/features.jpg");
+  letter-spacing: 0.2em;
+}
+
+.item-points {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.item-line {
+  position: absolute;
+  width: 0.2rem;
+  height: 8rem;
+  left: 0.6rem;
+  background-color: white;
+}
+
+.description-item {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: baseline;
+}
+
+.description-item h3 {
+  color: var(--color-orange);
+}
+
+.description-item p {
+  letter-spacing: unset;
+  text-align: justify;
+}
+
+.active-item {
+  background: white;
+}
+
+/* Section 4 */
+.section-4 {
+  background-image: url("assets/images/requirements.png");
+}
+
+.table-content > h5 {
+  color: var(--color-orange);
+}
+
+.table-bg {
+  padding: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
+}
+
+.table-bg table {
+  margin: auto;
+  width: 100%;
+}
+
+.br-bottom {
+  border-bottom: 1px solid #4d4c4c;
+}
+
+.br-right {
+  border-right: 1px solid #4d4c4c;
+}
+
+/* Section 5 */
+.section-5 {
+  background-image: url("assets/images/top-score-bg.png");
+  background-position: top;
+}
+
+.topscores-button {
+  width: 200px;
+  height: 60px;
+}
+
+.topscores-cards {
+  min-height: 40rem;
+}
+
+.topscores-cards .card {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.row-end {
+  justify-content: flex-end;
+}
+
+.card {
+  border-radius: 10px;
+  max-width: 20rem;
+  text-align: left;
+  position: absolute;
+}
+
+.card-img {
+  width: fit-content;
+  z-index: 1;
+}
+
+.card-profile-img {
+  width: 30rem;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.card-profile-img .card-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.card-profile-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img-shadow {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--color-orange);
+  width: 4rem;
+  height: 4rem;
+  transform: translate(4px, 4px);
+}
+
+.card-title {
+  color: var(--color-orange);
+}
+
+.card-title,
+.card-subtitle {
+  margin: 0;
+}
+
+.card-body {
+  padding: 0.5rem;
+  padding-left: unset;
+}
+
+/* Footer section */
+/* Newsletter section */
+footer {
+  min-height: 100vh;
+}
+
+.newsletter-text > h2 {
+  font-size: 4rem;
+}
+
+.newsletter-text > p {
+  font-size: x-large;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.newsletter-form {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.newsletter-form > div {
+  position: relative;
+  height: 3rem;
+}
+
+.newsletter-form input {
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-orange);
+  border: unset;
+}
+
+.newsletter-form input:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-orange);
+  border: unset;
+}
+
+.newsletter-form input::placeholder {
+  color: var(--color-orange);
+}
+
+.footer-images img {
+  width: 100%;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  font-size: x-small;
+}
+
+.footer-nav {
+  grid-template-columns: 9fr 3fr;
+}
+
+.footer-navLeft ul {
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.footer-navRight {
+  text-align: right;
+  justify-content: space-evenly;
+}
+
+.footer-text {
+  border-top: 2px solid var(--color-grey);
+  padding: 1rem 0;
+}
+
+.footer-text p {
+  text-align: left;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+.footer-misc {
+  text-align: right;
+}
+
+.footer-misc > a {
+  margin: 0 0.5rem;
+}
