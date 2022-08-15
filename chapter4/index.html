@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Games</title>
+    <link rel="icon" href="assets/images/icon.ico">
+    <link href="style.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <nav>
+        <div class="back-button">
+          <a href="index.html">
+            <h2><</h2>
+          </a>
+        </div>
+        <div class="title">
+          <div class="title-logo">
+            <img loading="lazy" src="./assets/logo.png" alt="" />
+          </div>
+          <div class="title-text">
+            <h1>ROCK PAPER SCRISSORS</h1>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <div class="container">
+      <main class="main">
+        <!-- Player section start -->
+        <div class="player">
+          <div class="player-title">
+            <h2>PLAYER 1</h2>
+          </div>
+          <div class="player-hand">
+            <button class="hand batu">
+              <img loading="lazy" src="./assets/batu.png" alt="batu" />
+            </button>
+
+            <button class="hand kertas">
+              <img loading="lazy" src="./assets/kertas.png" alt="kertas" />
+            </button>
+
+            <button class="hand gunting">
+              <img loading="lazy" src="./assets/gunting.png" alt="gunting" />
+            </button>
+          </div>
+        </div>
+        <!-- Player section end -->
+
+        <!-- Versus section start -->
+        <div id="versus-result" class="versus"></div>
+        <!-- Versus section end-->
+
+        <!-- Com section start -->
+        <div class="player">
+          <div class="player-title">
+            <h2>COM</h2>
+          </div>
+          <div class="player-hand">
+            <button class="hand batu">
+              <img loading="lazy" src="./assets/batu.png" alt="batu" />
+            </button>
+
+            <button class="hand kertas">
+              <img loading="lazy" src="./assets/kertas.png" alt="kertas" />
+            </button>
+
+            <button class="hand gunting">
+              <img loading="lazy" src="./assets/gunting.png" alt="gunting" />
+            </button>
+          </div>
+        </div>
+        <!-- Com section end-->
+
+        <!-- Reset button start -->
+        <div class="reset">
+          <button id="reset" type="reset">
+            <img loading="lazy" src="./assets/refresh.png" alt="reset" />
+          </button>
+        </div>
+        <!-- Reset button end -->
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
