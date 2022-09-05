@@ -94,7 +94,7 @@ a {
 
 /* Section 1 */
 .section-1 {
-  background-image: url("assets/images/main-bg.jpg");
+  background-image: url("/assets/chapter3/images/main-bg.jpg");
   display: grid;
   grid-template-rows: 11fr 1fr;
 }
@@ -111,7 +111,7 @@ a {
 
 /* Section 2 */
 .section-2 {
-  background-image: url("assets/images/the-games-bg.jpg");
+  background-image: url("/assets/chapter3/images/the-games-bg.jpg");
 }
 
 .carousel {
@@ -136,7 +136,7 @@ a {
 
 /* Section 3 */
 .section-3 {
-  background-image: url("assets/images/features.jpg");
+  background-image: url("/assets/chapter3/images/features.jpg");
   letter-spacing: 0.2em;
 }
 
@@ -176,7 +176,7 @@ a {
 
 /* Section 4 */
 .section-4 {
-  background-image: url("assets/images/requirements.png");
+  background-image: url("/assets/chapter3/images/requirements.png");
 }
 
 .table-content > h5 {
@@ -207,7 +207,7 @@ a {
 
 /* Section 5 */
 .section-5 {
-  background-image: url("assets/images/top-score-bg.png");
+  background-image: url("/assets/chapter3/images/top-score-bg.png");
   background-position: top;
 }
 
