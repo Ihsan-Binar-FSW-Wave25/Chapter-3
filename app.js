@@ -1,10 +1,9 @@
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
-const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
-const indexRouter = require("./routes/index");
+const homeRouter = require("./routes/index");
 const chapter3Router = require("./routes/chapter3");
 const chapter4Router = require("./routes/chapter4");
 const apiRouter = require("./routes/api");
@@ -17,12 +16,11 @@ app.set("view engine", "ejs");
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRouter);
-app.use("/chapter3", chapter3Router);
+app.use("/", chapter3Router);
 app.use("/chapter4", chapter4Router);
+app.use("/index", homeRouter);
 app.use("/api", apiRouter);
 
 app.use((req, res, next) => {

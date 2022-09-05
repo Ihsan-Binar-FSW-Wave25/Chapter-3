@@ -5,7 +5,7 @@ router.get("/", (req, res, next) => {
   const name = req.query.name || "Player";
   console.log(name);
   res.render("chapter4", {
-    title: "Try Out The Games",
+    title: "Rock Paper Scissors Games",
     name: name,
   });
 });
