@@ -1,14 +1,23 @@
-[
-    {
-      "id": 1,
-      "name": "ihsan",
-      "email": "ihsan@gmail.com",
-      "password": "ihsan123"
-    },
-    {
-      "id": 2,
-      "name": "ika",
-      "email": "ika@yahoo.com",
-      "password": "ika123"
-    }
-  ]
+{
+  "development": {
+    "username": "ihsan",
+    "password": "ihsan123",
+    "database": "binar_challenge",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "ihsan",
+    "password": "ihsan123",
+    "database": "binar_challenge",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "ihsan",
+    "password": "ihsan123",
+    "database": "binar_challenge",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

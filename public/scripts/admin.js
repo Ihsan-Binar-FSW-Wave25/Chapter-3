@@ -6,14 +6,14 @@ const deleteForm = document.getElementById("deleteForm");
 for (let i = 0; i < editButton.length; i++) {
   editButton[i].onclick = () => {
     const data = editButton[i].getAttribute("data-bs-id");
-    updateForm.setAttribute("action", `/dashboard/edit/${data}`);
+    updateForm.setAttribute("action", `/admin/edit/${data}`);
   };
 }
 
 for (let i = 0; i < deleteButton.length; i++) {
   deleteButton[i].onclick = () => {
     const data = deleteButton[i].getAttribute("data-bs-id");
-    deleteForm.setAttribute("action", `/dashboard/delete/${data}`);
+    deleteForm.setAttribute("action", `/admin/delete/${data}`);
   };
 }
 
